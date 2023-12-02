@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="config.js"></script>
+    <script src="/js/cloud.js"></script>
+    <script src="/js/obj.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="startScreen">
+        <input id="rang" placeholder="Dein Rang, Fliegerass?" type="text"><span id="err"></span></input>
+        <button onclick="formsubmit()">Beginne das Abenteuer</button>
+    </div>    
+    <div class="deathScreen">
+        <h1 class="deathText"></h1>
+        <button id="repair" onclick="playaigain()">Reparieren und losstarten...</button>
+        <button onclick="stopgame()">Spielen beenden</button>
+    </div>    
+    <div class="elements">
+        <div class="clouds"></div>
+        <div class="objcts"></div>  
+        <div class="plane"></div> 
+        <div class="score"><p id="score">0</p></div>
+    </div>
+</body>
+</html>
